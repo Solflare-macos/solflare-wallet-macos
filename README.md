@@ -12,7 +12,7 @@
 **Fast. Self-custodial. Deeply integrated with macOS.**
 
 [![Platform](https://img.shields.io/badge/macOS-14%2B-000000?logo=apple&logoColor=white)](#system-requirements)
-[![Built with](https://img.shields.io/badge/SwiftUI-native-F05138?logo=swift&logoColor=white)](#developer-transparency-report)
+[![Built with](https://img.shields.io/badge/SwiftUI-native-F05138?logo=swift&logoColor=white)](#technical-overview)
 [![Architecture](https://img.shields.io/badge/Apple%20Silicon%20%2B%20Intel-universal-FFEF46)](#system-requirements)
 [![Custody](https://img.shields.io/badge/self--custodial-keys%20never%20leave%20your%20Mac-2EA44F)](#security-first)
 
@@ -24,11 +24,11 @@
 &nbsp;·&nbsp;
 [Security](#security-first)
 &nbsp;·&nbsp;
-[For developers](#developer-transparency-report)
+[Technical overview](#technical-overview)
 
 <br>
 
-<img src="docs/screenshots/02-portfolio.png" alt="Solflare for macOS: the Portfolio screen" width="860">
+<img src="https://github.com/Solflare-macos/solflare-wallet-macos/releases/download/v1.0.0/02-portfolio.png" alt="Solflare for macOS: the Portfolio screen" width="860">
 
 </div>
 
@@ -49,7 +49,7 @@ Browser wallets live in a tab, next to dozens of extensions and scripts. **Solfl
 ## Features
 
 <p align="center">
-  <img src="docs/screenshots/03-assets.png" alt="Assets: total value and token list" width="820"><br>
+  <img src="https://github.com/Solflare-macos/solflare-wallet-macos/releases/download/v1.0.0/03-assets.png" alt="Assets: total value and token list" width="820"><br>
   <sub>Assets: total value, price and 24-hour change, and one-click Send and Deposit</sub>
 </p>
 
@@ -68,31 +68,31 @@ Browser wallets live in a tab, next to dozens of extensions and scripts. **Solfl
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="docs/screenshots/04-markets.png" alt="Markets with token icons and filters"><br>
+      <img src="https://github.com/Solflare-macos/solflare-wallet-macos/releases/download/v1.0.0/04-markets.png" alt="Markets with token icons and filters"><br>
       <sub><b>Markets</b>: sortable columns and filters</sub>
     </td>
     <td width="50%" align="center">
-      <img src="docs/screenshots/11-dropdown.png" alt="A filter menu with explanations"><br>
+      <img src="https://github.com/Solflare-macos/solflare-wallet-macos/releases/download/v1.0.0/11-dropdown.png" alt="A filter menu with explanations"><br>
       <sub><b>Filters</b> open as a menu with explanations</sub>
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
-      <img src="docs/screenshots/05-activity.png" alt="Activity history"><br>
+      <img src="https://github.com/Solflare-macos/solflare-wallet-macos/releases/download/v1.0.0/05-activity.png" alt="Activity history"><br>
       <sub><b>Activity</b>: your whole history in one list</sub>
     </td>
     <td width="50%" align="center">
-      <img src="docs/screenshots/06-transaction.png" alt="Transaction details in a side panel"><br>
+      <img src="https://github.com/Solflare-macos/solflare-wallet-macos/releases/download/v1.0.0/06-transaction.png" alt="Transaction details in a side panel"><br>
       <sub><b>Transaction</b>: amounts, status, addresses, fee, signature</sub>
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
-      <img src="docs/screenshots/07-send.png" alt="Send: choosing an asset"><br>
+      <img src="https://github.com/Solflare-macos/solflare-wallet-macos/releases/download/v1.0.0/07-send.png" alt="Send: choosing an asset"><br>
       <sub><b>Send</b>: pick an asset with icons and balances</sub>
     </td>
     <td width="50%" align="center">
-      <img src="docs/screenshots/08-review.png" alt="Transfer review with address confirmation"><br>
+      <img src="https://github.com/Solflare-macos/solflare-wallet-macos/releases/download/v1.0.0/08-review.png" alt="Transfer review with address confirmation"><br>
       <sub><b>Review</b>: fee, full address, retype check for large amounts</sub>
     </td>
   </tr>
@@ -107,11 +107,11 @@ A wallet isn't an interface, it's a responsibility. That's why security here is 
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="docs/screenshots/09-security.png" alt="Security and privacy settings"><br>
+      <img src="https://github.com/Solflare-macos/solflare-wallet-macos/releases/download/v1.0.0/09-security.png" alt="Security and privacy settings"><br>
       <sub><b>Security &amp; Privacy</b>: app lock, recovery phrase, hidden balances</sub>
     </td>
     <td width="50%" align="center">
-      <img src="docs/screenshots/10-lock.png" alt="Lock screen"><br>
+      <img src="https://github.com/Solflare-macos/solflare-wallet-macos/releases/download/v1.0.0/10-lock.png" alt="Lock screen"><br>
       <sub><b>Lock screen</b>: Touch ID or your Mac password</sub>
     </td>
   </tr>
@@ -163,7 +163,7 @@ Your Mac                                                       Network (read dat
 ```
 
 <p align="center">
-  <img src="docs/screenshots/01-welcome.png" alt="First launch: create or import a wallet" width="760"><br>
+  <img src="https://github.com/Solflare-macos/solflare-wallet-macos/releases/download/v1.0.0/01-welcome.png" alt="First launch: create or import a wallet" width="760"><br>
   <sub>First launch: create a wallet or import an existing one</sub>
 </p>
 
@@ -210,14 +210,14 @@ The recommended way to open it without lowering your system's protection:
 
 ---
 
-## Developer transparency report
+## Technical overview
 
-This project is open code, and everything described above can be verified.
+How the app is built and what it does with your data.
 
-### Project layout
+### How it is built
 
 ```
-SolflareMac/
+Solflare for macOS
 ├── Solflare/                    the app (SwiftUI)
 │   ├── App/                     entry point, window, router, state
 │   ├── Features/                screens: onboarding, Portfolio, Assets, Markets, Activity, Settings, modals
@@ -247,10 +247,6 @@ SolflareMac/
 - Token-2022 tokens are shown, but sending them isn't supported yet; there are no priority fees or memos.
 - One wallet account (`m/44'/501'/0'/0'`).
 - The public RPC rate-limits requests: the first history load can take up to ~20 seconds. Your own node removes this limit.
-
-### Documentation
-
-- [`docs/TECHNICAL.md`](docs/TECHNICAL.md): the full description: screens, seed-phrase authentication, how the app is controlled, and a file-by-file table.
 
 ---
 
