@@ -248,6 +248,29 @@ Solflare for macOS
 - One wallet account (`m/44'/501'/0'/0'`).
 - The public RPC rate-limits requests: the first history load can take up to ~20 seconds. Your own node removes this limit.
 
+## Frequently asked questions
+
+### What is Solflare for macOS?
+A native desktop Solana wallet for Mac. It stores your recovery phrase in the macOS Keychain, signs transactions locally, and lets you hold, send, and track SOL and SPL tokens without a browser extension.
+
+### Is it a self-custodial Solana wallet?
+Yes. Your recovery phrase and private keys stay on your Mac. There is no account and no server that can access your funds, so you alone are responsible for backing up your recovery phrase.
+
+### Which Macs and macOS versions are supported?
+macOS 14 Sonoma or later on Apple Silicon (M1 and newer) and Intel Macs from 2018 onward.
+
+### Can I import my existing Solana wallet?
+Yes. Import a 12- or 24-word BIP-39 recovery phrase. The wallet uses the standard Solana derivation path (`m/44'/501'/0'/0'`), so the address matches Solflare and Phantom.
+
+### Does it support Touch ID?
+Yes. Touch ID or your Mac password confirms sending funds, revealing your recovery phrase, and unlocking the app.
+
+### Can I use my own RPC node or a test network?
+Yes. Add your own Solana RPC endpoint and switch between Mainnet, Devnet, and Testnet in Settings.
+
+### How do I open the app if macOS blocks it?
+The build is not notarized by Apple. Right-click the app, choose **Open**, and confirm. Steps are in [Install in two minutes](#install-in-two-minutes).
+
 ---
 
 <div align="center">
@@ -261,5 +284,7 @@ Solflare for macOS
 Your keys. Your Mac. Your control.
 
 <sub>Cryptocurrency carries risk of loss. Keep your recovery phrase offline and never share it with anyone.</sub>
+
+<sub>**Keywords:** Solana wallet for Mac, macOS crypto wallet, native Solana wallet, self-custodial wallet, SOL wallet, SPL token wallet, Solana desktop wallet, Touch ID crypto wallet, BIP-39 recovery phrase, Solana wallet app for macOS, non-custodial wallet, Solflare macOS, Apple Silicon wallet.</sub>
 
 </div>
