@@ -285,6 +285,6 @@ Your keys. Your Mac. Your control.
 
 <sub>Cryptocurrency carries risk of loss. Keep your recovery phrase offline and never share it with anyone.</sub>
 
-<sub>**Keywords:** Solana wallet for Mac, macOS crypto wallet, native Solana wallet, self-custodial wallet, SOL wallet, SPL token wallet, Solana desktop wallet, Touch ID crypto wallet, BIP-39 recovery phrase, Solana wallet app for macOS, non-custodial wallet, Solflare macOS, Apple Silicon wallet.</sub>
+<sub>**Related searches:** Solflare macOS download · Download Solflare wallet DMG · Solana wallet for Mac Apple Silicon · Solana wallet for macOS Sonoma · Solana native app for Mac · Self-custodial Solana wallet macOS · BIP-39 recovery phrase import Solana · macOS Keychain encrypted crypto wallet · Touch ID secured Solana wallet · Non-custodial desktop wallet for SOL · Phantom wallet alternative for macOS · Browser extension alternative for Solana · Solana wallet for MacBook Pro M1 M2 M3 · How to install Solflare on macOS Sonoma · Securely import Solana seed phrase on Mac · Solana wallet with Touch ID and App Sandbox · Native Solana wallet for Intel and Apple Silicon Mac</sub>
 
 </div>
